@@ -15,7 +15,7 @@
                 }
             };
             xobj.open('GET', 'cpi.json', true);
-            xobj.setRequestHeader("Access-Control-Allow-Origin","*");
+            xobj.setRequestHeader("Access-Control-Allow-Origin", "*");
             xobj.send(null);
         };
 
@@ -165,8 +165,14 @@
         rupees
         <br><br>
         <button name="adjust" onclick="adjust()">Adjust!</button><br>
-        <div id="new-rupees"></div>
+        <div id="new-rupees">⠀</div>
     </div>
 </body>
+
+<br><br><br><br><br><br><br><br>
+
+<footer>
+    <p> Data from:<br>OECD (2010), "Main Economic Indicators - complete database", Main Economic Indicators (database), http://dx.doi.org/10.1787/data-00052-en (August 1, 2020)</p>
+</footer>
 
 </html>

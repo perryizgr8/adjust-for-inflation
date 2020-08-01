@@ -84,3 +84,8 @@ button:active {
     -webkit-appearance: none;
     margin: 0;
 }
+
+footer {
+    font-size: smaller;
+    color: darkgray;
+}
