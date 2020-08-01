@@ -9,26 +9,18 @@
         function fetchJson(callback) {
             var xobj = new XMLHttpRequest();
             xobj.overrideMimeType("application/json");
-
             xobj.onreadystatechange = function () {
                 if (xobj.readyState == 4 && xobj.status == "200") {
-                    // Required use of an anonymous callback as .open will NOT return 
-                    // a value but simply returns undefined in asynchronous mode
                     callback(xobj.responseText);
                 }
             };
-
             xobj.open('GET', 'cpi.json', true);
-            // Maybe you require use of an unknown origin.
             xobj.setRequestHeader("Access-Control-Allow-Origin","*");
             xobj.send(null);
         };
 
         fetchJson(function (response) {
-            // Parse JSON string into object
             cpi_data = JSON.parse(response);
-            // Parse JSON array string into object
-            //cpi_data = JSON.stringify(response);
         });
     </script>
 </head>
@@ -173,9 +165,7 @@
         rupees
         <br><br>
         <button name="adjust" onclick="adjust()">Adjust!</button><br>
-        <div id="new-rupees">
-            ₹2039
-        </div>
+        <div id="new-rupees"></div>
     </div>
 </body>
 
