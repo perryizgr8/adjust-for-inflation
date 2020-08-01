@@ -9,5 +9,5 @@ function adjust() {
 }
 
 function multiplier(year) {
-    return cpi_data[year];
+    return cpi_data[year].cpi;
 }
