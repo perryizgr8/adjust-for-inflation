@@ -5,7 +5,7 @@ function adjust() {
 
     // cpi = (cost in given year/cost in base year)*100
     new_rupees = old_rupees * (multiplier(new_year) / multiplier(old_year));
-    document.getElementById("new-rupees").textContent = "₹" + new_rupees;
+    document.getElementById("new-rupees").textContent = "₹" + Math.trunc(new_rupees);
 }
 
 function multiplier(year) {
