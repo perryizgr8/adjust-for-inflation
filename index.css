@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+    color: floralwhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 75px;
+}
+
+#old-rupees {
+    font-size: 50px;
+}
+
+#old-year {
+    font-size: 50px;
+}
+
+#new-rupees {
+    font-size: 70px;
+}
+
+#new-year {
+    font-size: 50px;
+}
+
+div {
+    font-size: 50px;
+}
+
+button {
+    font-size: 50px;
+}
